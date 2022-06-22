@@ -63,6 +63,8 @@ class TitleState extends MusicBeatState
 	var credTextShit:Alphabet;
 	var textGroup:FlxGroup;
 	var ngSpr:FlxSprite;
+	
+	var greenhill:FlxBackdrop;
 
 	var curWacky:Array<String> = [];
 
@@ -286,12 +288,12 @@ class TitleState extends MusicBeatState
 		gfDance = new FlxSprite(titleJSON.gfx, titleJSON.gfy);
 
     var bfmoment:FlxSprite = new FlxSprite(0,0);
-    bfmoment.loadGraphic(Paths.image("boyfriendlmao", "preload"));
+    bfmoment.loadGraphic(Paths.image("PoyoIcon", "preload"));
     bfmoment.screenCenter();
     
     greenhill.setGraphicSize(Std.int(width * 6));
     
-    var greenhill:FlxBackdrop = new FlxBackdrop(Paths.image("greenhillbg", "preload"), 2, 0, true, false);
+    greenhill = new FlxBackdrop(Paths.image("greenhillbg", "preload"), 2, 0, true, false);
     
     
 		var easterEgg:String = FlxG.save.data.psychDevsEasterEgg;
