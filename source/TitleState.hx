@@ -291,7 +291,7 @@ class TitleState extends MusicBeatState
     bfmoment.loadGraphic(Paths.image("PoyoIcon", "preload"));
     bfmoment.screenCenter();
     
-    greenhill.setGraphicSize(Std.int(width * 6));
+    greenhill.setGraphicSize(Std.int(greenhill.width * 6));
     
     greenhill = new FlxBackdrop(Paths.image("greenhillbg", "preload"), 2, 0, true, false);
     
